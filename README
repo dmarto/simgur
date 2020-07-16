@@ -1,0 +1,44 @@
+simgur
+======
+
+simple imgur post viewer
+
+Allows you to open imgur post with javascript blocked on the imgur
+domain, and provides you simplified (but better, imho) experience.
+
+
+FEATURES
+--------
+ - simple single page gallery, smooth scrolling
+   - lazy loading of images (browser native control)
+   - next & prev key-binds (j/k & up/down)
+   - video/image elements are given maximum viewport
+ - bypass "sign-on required" and "age verification" using embed mode
+ - all (known to me) non file pages, are overwritten with our view
+
+
+TODO
+----
+ - title of post
+ - title of elements?
+ - description of elements?
+ - click on item -> open direct link in new tab
+ - fast forward support in gallery
+ - create our own posts for testing all options
+ - write better README (pls, help)
+
+
+TEST
+----
+ - 103 wallapers https://imgur.com/a/ErUhyi8
+ - 575 wallpapers https://imgur.com/a/akHsJ
+
+
+NOTE
+----
+
+As I use only Violentmonkey, this may not work under other userscript
+managers. PRs are welcome to fix problems with other, as long as they
+don't break functionality under Violentmonkey.
+
+Violentmonkey: https://violentmonkey.github.io/
