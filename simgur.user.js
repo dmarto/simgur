@@ -2,7 +2,7 @@
 // @name          simgur
 // @description   simple imgur post viewer
 // @author        dmarto
-// @version       2.0.0
+// @version       2.0.1
 // @include       https://imgur.com/a/*
 // @include       https://imgur.com/*/embed
 // @include       https://imgur.com/gallery/*
@@ -16,7 +16,6 @@ const href = document.location.href;
 const san_href = document.location.origin + document.location.pathname;
 
 const html = document.getElementsByTagName("html")[0];
-
 
 if (href.indexOf(".gifv") > 0) {
 	document.location.href = href.replace(".gifv", "");
@@ -32,6 +31,11 @@ if (href.indexOf("gallery") > 0) {
 if (href.indexOf("/embed") > 0 && href.indexOf("pub=true") < 0) {
 	document.location.href = san_href + "?pub=true";
 	return
+}
+
+if (html.textContent.indexOf("JavaScript has been disabled on your browser") > 0) {
+	document.location.href = san_href + "/embed?pub=true";
+	return;
 }
 
 if (html.textContent.indexOf("By continuing, you acknowledge that you are 18+ years of age.") > 0) {
