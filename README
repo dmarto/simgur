@@ -26,11 +26,12 @@ TODO
  - fast forward support in gallery
  - create our own posts for testing all options
  - write better README (pls, help)
+ - posts that are in sub-reddits gallery/context, have strange urls
 
 
 TEST
 ----
- - 103 wallapers https://imgur.com/a/ErUhyi8
+ - 103 wallpapers https://imgur.com/a/ErUhyi8
  - 575 wallpapers https://imgur.com/a/akHsJ
 
 
